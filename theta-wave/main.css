@@ -1,0 +1,138 @@
+body {
+    animation: color 200s infinite;
+    animation-delay: 8s;
+}
+
+@keyframes color {
+    0% {
+        background: white;
+    }
+    10% {
+        background: #95fa7f;
+    }
+    20% {
+        background: white;
+    }
+    30% {
+        background: #0092ff;
+    }
+    40% {
+        background: white;
+    }
+    50% {
+        background: #00fff9;
+    }
+    60% {
+        background: white;
+    }
+    70% {
+        background: #fffcb9;
+    }
+    80% {
+        background: white;
+    }
+    90% {
+        background: #ffdef5;
+    }
+    100% {
+        background: white;
+    }
+}
+
+img {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+
+.muted {
+    display: none;
+}
+
+.text-box {
+    position: relative;
+    bottom: 0px;
+    margin: 0px auto;
+    opacity: 0;
+    width: 30%;
+    line-height: 60px;
+    animation-name: popup;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+}
+
+p {
+    font-family: roboto, helvetica, sans-serif;
+    color: #bababa;
+    font-size: 35px;
+    text-align: center;
+}
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+        bottom: 0px;
+    }
+    20% {
+        opacity: 1;
+        line-height: 45px;
+        bottom: 100px;
+    }
+    40% {
+        bottom: 90px;
+    }
+    60% {
+        bottom: 100px;
+    }
+    80% {
+        bottom: 90px;
+    }
+    95% {
+        opacity: 1;
+        bottom: 100px;
+        line-height: 45px;
+    }
+    100% {
+        opacity: 0;
+        bottom: 0px;
+        line-height: 80px;
+    }
+}
+
+.element {
+    height: 250px;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 200px;
+    opacity: 0.15;
+    background-image: radial-gradient(250px at 50% 50%, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 0, 0) 50%);
+    animation-name: stretch;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(2);
+    }
+    20% {
+        transform: scale(3);
+    }
+    40% {
+        transform: scale(2);
+    }
+    60% {
+        transform: scale(3);
+    }
+    80% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(3);
+    }
+}
